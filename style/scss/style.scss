@@ -1,0 +1,12 @@
+@use "./abstracts";
+*{
+    margin: 0;
+    padding : 0;
+}
+body {
+  height: 100vh;
+  background-color: abstracts.$dark-Turquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
