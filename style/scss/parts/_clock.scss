@@ -1,7 +1,5 @@
 @use "../abstracts";
 
-$PI: 3.14;
-
 .clock {
   box-sizing: border-box;
   border-radius: 50%;
@@ -16,8 +14,9 @@ $PI: 3.14;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  .clock_interior_board {
+
+  ///interior board
+  &_interior_board {
     position: absolute;
     background-color: abstracts.$dark-Turquoise;
     width: 70%;
@@ -26,32 +25,45 @@ $PI: 3.14;
     z-index: 1;
   }
 
-  .clock__hours {
+  ///hour numbers
+  &__hours {
     width: 0.1em;
     height: 90%;
     border-radius: 10px;
     background-color: abstracts.$light-Turquoise;
     position: absolute;
     box-shadow: 0 0 3px abstracts.$light-Turquoise;
+
+    &_1_7 {
+      transform: rotate(30deg);
+    }
+
+    &_2_8 {
+      transform: rotate(60deg);
+    }
+
+    &_3_9 {
+      transform: rotate(90deg);
+    }
+
+    &_4_10 {
+      transform: rotate(120deg);
+    }
+
+    &_5_11 {
+      transform: rotate(150deg);
+    }
   }
 
-  .clock__hours_1_7 {
-    transform: rotate(30deg);
+  ///hands
+  &__hourhand {
+    @include abstracts.hands(abstracts.$light-Turquoise, 1.5em, 2,0.5);
+  }
+  &__minutehand {
+    @include abstracts.hands(abstracts.$blue-Turquoise, 0.8em, 3,0.7);
+  }
+  &__secondhand {
+    @include abstracts.hands(abstracts.$seconds-hand, 0.2em, 4);
   }
 
-  .clock__hours_2_8 {
-    transform: rotate(60deg);
-  }
-
-  .clock__hours_3_9 {
-    transform: rotate(90deg);
-  }
-
-  .clock__hours_4_10 {
-    transform: rotate(120deg);
-  }
-
-  .clock__hours_5_11 {
-    transform: rotate(150deg);
-  }
 }
