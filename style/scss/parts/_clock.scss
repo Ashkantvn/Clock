@@ -1,5 +1,7 @@
 @use "../abstracts";
 
+$PI: 3.14;
+
 .clock {
   box-sizing: border-box;
   border-radius: 50%;
@@ -8,7 +10,21 @@
   padding: 1em;
   position: relative;
   border: 9px solid abstracts.$dark-Turquoise;
-  box-shadow: 0 0 6px abstracts.$blue-Turquoise, inset 0 0 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 6px abstracts.$blue-Turquoise,
+    inset 0 0 9px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .clock_interior_board {
+    position: absolute;
+    background-color: abstracts.$dark-Turquoise;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    z-index: 1;
+  }
 
   .clock__hours {
     width: 0.1em;
@@ -16,8 +32,26 @@
     border-radius: 10px;
     background-color: abstracts.$light-Turquoise;
     position: absolute;
-    left: 50%;
     box-shadow: 0 0 3px abstracts.$light-Turquoise;
   }
-  
+
+  .clock__hours_1_7 {
+    transform: rotate(30deg);
+  }
+
+  .clock__hours_2_8 {
+    transform: rotate(60deg);
+  }
+
+  .clock__hours_3_9 {
+    transform: rotate(90deg);
+  }
+
+  .clock__hours_4_10 {
+    transform: rotate(120deg);
+  }
+
+  .clock__hours_5_11 {
+    transform: rotate(150deg);
+  }
 }
