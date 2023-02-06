@@ -1,0 +1,22 @@
+@use "../abstracts/colors";
+
+.clock {
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 50vh;
+  width: 50vh;
+  padding: 1em;
+  position: relative;
+  border: 9px solid colors.$dark-Turquoise;
+  box-shadow: 0 0 6px colors.$blue-Turquoise, inset 0 0 9px rgba(0, 0, 0, 0.5);
+
+  .clock__hours {
+    width: 0.1em;
+    height: 90%;
+    border-radius: 10px;
+    background-color: colors.$light-Turquoise;
+    position: absolute;
+    left: 50%;
+    box-shadow: 0 0 3px colors.$light-Turquoise;
+  }
+}
