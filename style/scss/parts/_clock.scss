@@ -57,10 +57,10 @@
 
   ///hands
   &__hourhand {
-    @include abstracts.hands(abstracts.$light-Turquoise, 1.5em, 2,0.5);
+    @include abstracts.hands(abstracts.$light-Turquoise, 1.5em, 2);
   }
   &__minutehand {
-    @include abstracts.hands(abstracts.$blue-Turquoise, 0.8em, 3,0.7);
+    @include abstracts.hands(abstracts.$blue-Turquoise, 0.8em, 3);
   }
   &__secondhand {
     @include abstracts.hands(abstracts.$seconds-hand, 0.2em, 4);

@@ -1,4 +1,4 @@
-@mixin hands($hand_color , $hand_width , $hand_index,$hand_scale) {
+@mixin hands($hand_color , $hand_width , $hand_index) {
     position: absolute;
     height: 50%;
     top:10%;
@@ -7,5 +7,4 @@
     background-color: $hand_color;
     width: $hand-width;
     z-index: $hand_index;
-    transform: scale($hand_scale);
 }

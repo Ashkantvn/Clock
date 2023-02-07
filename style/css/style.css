@@ -51,7 +51,6 @@
   background-color: #eef5fa;
   width: 1.5em;
   z-index: 2;
-  transform: scale(0.5);
 }
 .clock__minutehand {
   position: absolute;
@@ -62,7 +61,6 @@
   background-color: #1a5285;
   width: 0.8em;
   z-index: 3;
-  transform: scale(0.7);
 }
 .clock__secondhand {
   position: absolute;
@@ -73,7 +71,6 @@
   background-color: #fa3636;
   width: 0.2em;
   z-index: 4;
-  transform: scale(1);
 }
 
 * {
